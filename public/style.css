@@ -31,7 +31,7 @@ h1 {
 }
 
 .contruction_zone {
-    height: 50px;
+    height: 70px;
     display: block;
     transform: translate(0, -60px);
     background: repeating-linear-gradient(-45deg, black, black 20px, rgb(255, 242, 0) 20px, rgb(255, 242, 0) 40px);
