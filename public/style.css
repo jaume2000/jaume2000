@@ -1,0 +1,39 @@
+
+html, 
+body {
+    height: 100%;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+}
+
+.main_page {
+    background-color: aliceblue;
+    margin: auto 20%;
+    height: 100%;
+    padding: 20px
+}
+
+h1 {
+    text-align: center;
+    justify-content: center;
+    margin: 0
+}
+
+.download_cv {
+    display: flex;
+    justify-content: center;
+    margin: 10px 25%;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+    border: black solid 1px;
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+
+.download_cv:hover {
+    color: white;
+    background-color: black;
+}
