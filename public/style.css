@@ -7,9 +7,19 @@ body {
     overflow: hidden;
 }
 
+@media (max-width: 767px) {
+    .main_page {
+        margin: 0;
+    }
+}
+@media (min-width: 767px) {
+    .main_page {
+        margin: auto 20%;
+    }
+}
+
 .main_page {
     background-color: #ddd;
-    margin: auto 20%;
     height: 100%;
     padding: 20px
 }
