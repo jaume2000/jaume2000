@@ -23,9 +23,132 @@ h1 {
 .contruction_zone {
     height: 50px;
     display: block;
+    transform: translate(0, -60px);
     background: repeating-linear-gradient(-45deg, black, black 20px, rgb(255, 242, 0) 20px, rgb(255, 242, 0) 40px);
     border-radius: 5px;
     border: 10px #333 solid;
+    z-index: 10;
+}
+
+.contruction_zone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    color: red;
+}
+
+.contruction_zone.enabled:hover {
+    animation: vibration 0.2s infinite;
+}
+
+@keyframes vibration {
+    0% {
+        transform: translate(0, -60px);
+    }
+    33% {
+        transform: translate(-2px, -62px);
+    }
+    66% {
+        transform: translate(2px, -58px);
+    }
+    100% {
+        transform: translate(0, -60px);
+    }
+}
+
+.contruction_zone.disabled {
+    animation: throw_outside 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes throw_outside {
+    0% {
+        transform-origin: top right;
+        animation-timing-function: ease-in;
+
+    }
+    10% {
+        transform-origin: top right;
+        transform: rotate(-90deg);
+        animation-timing-function: ease;
+    }
+    15% {
+        transform-origin: top right;
+        transform: rotate(-80deg);
+    }
+    25% {
+        transform-origin: top right;
+        transform: rotate(-93deg);
+    }
+    35% {
+        transform-origin: top right;
+        transform: rotate(-87deg);
+
+    }
+
+    80% {
+        transform-origin: top right;
+        transform: translate(0, 5000px) rotate(-100deg);
+    }
+    99% {
+        ransform-origin: top right;
+        transform: translate(0, 5000px) rotate(-100deg);
+        display: block;
+    }
+    100% {
+        display: none;
+        transform: translate(0, 5000px) rotate(-100deg);
+        display: block;
+    }
+}
+
+#msg1.disabled {
+    animation: msg1 10s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes msg1 {
+    95% {
+        transform-origin: left;
+        transform: rotate(0);
+
+    }
+    100% {
+        transform-origin: left;
+        transform: rotate(10deg);
+    }
+}
+
+#msg2.disabled {
+    animation: msg2 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes msg2 {
+    0% {
+        animation-timing-function: ease-out;
+        transform-origin: center;
+    }
+    20% {
+        transform-origin: center;
+        transform: rotate(0) translate(0,0);
+
+    }
+    100% {
+        transform-origin: center;
+        transform: translate(0,1000px) rotate(50deg);
+
+    }
+}
+
+
+
+#barrier_message {
+    background-color: #bbb;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0px 10px;
 }
 
 .download_cv {

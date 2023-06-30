@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaume's portfolio</title>
     <link rel="stylesheet" href="public/style.css">
+    <script src="public/interactive.js"></script>
 </head>
 <body>
     <div class="main_page">
@@ -12,15 +13,14 @@
         <h1>🚧 Be careful! You are in a construction zone! 🚧 </h1>
         <br>
         <br>
-        <div class="contruction_zone"></div>
+        <div id="advise"><p>Be careful, don't touch the barrier.</p></div>
+        <div id="barrier_message" class="message"><p>     ... Dude, i told you to be CAREFUL, this is in a construction zone. <br>Make me a favor and at least read my CV</p></div>
+        <div id="barrier" class="contruction_zone enabled" onclick="break_barrier()">DANGER: CONSTRUCTION ZONE</div>
+        <p id="msg1">I am currently building this site so you can check my work, so please, get back in a few days :) </p>
         <br>
+        <p id="msg2">But hey, soon i will finish this and you will be able to see some of my projects.</p>
         <br>
-        <br>
-        <p>I am currently building this site so you can check my work, so please, get back in a few days :) </p>
-        <br>
-        <p>But hey, soon i will finish this and you will be able to see some of my projects.</p>
-        <br>
-        <p>While you wait, you also can check my portfolio here :)</p>
+        <p id="msg3">While you wait, you also can check my portfolio here :)</p>
         <a href="public/jaume_cv.pdf" class="download_cv" download>Checkout CV</a>
     </div>
 </body>
