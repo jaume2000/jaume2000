@@ -54,16 +54,16 @@ h1 {
 
 @keyframes vibration {
     0% {
-        transform: translate(0, -75px);
+        transform: translate(0, -85px);
     }
     33% {
-        transform: translate(-2px, -77px);
+        transform: translate(-2px, -87px);
     }
     66% {
-        transform: translate(2px, -73px);
+        transform: translate(2px, -83px);
     }
     100% {
-        transform: translate(0, -75px);
+        transform: translate(0, -85px);
     }
 }
 
