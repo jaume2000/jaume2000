@@ -2,9 +2,9 @@
 
 ## Welcome to my ✨github page✨
 
-I'm currently working on my portfolio with some Typescript and Three.js
+I'm currently working on my portfolio with some Typescript and NextJS
 <br>
-Check the progress here: https://jaume2000.github.io/jaume2000
+Check the progress here: https://jaumeivars.dev
 <br>
-Also, love ML and Videogame dev with Unity3D
+Also, love ML and Videogame dev with Unity3D! So be sure to check the *my works* section :)
 
